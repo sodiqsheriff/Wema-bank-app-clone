@@ -12,7 +12,7 @@
     {/*sub-hero-section */}
     import Iphone from './assets/Iphone.png'
     {/*seamless-section */}
-    import chart from './assets/goalsectionimage.png'
+    import chart from './assets/Goal.png'
     {/*chart-section */}
     import bank from './assets/safe.png'
     import dark from './assets/Logo-only-Mock.png'
