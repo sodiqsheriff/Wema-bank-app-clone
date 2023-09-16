@@ -1,22 +1,32 @@
-
+import React, { useState } from 'react';
 import Bank from '../assets/Logo.png'
+import menu from '../assets/Menu-icon.png'
+import exit from '../assets/Exit-icon.png'
 
 const Navbar = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // Function to toggle the menu
+    const toggleMenu = () => {
+      setIsMenuOpen(!isMenuOpen);
+    };
    
 
     return (
 
-
-<div className="max-w-1200 ml-auto mr-auto pb-16 ">
+<>
+<div className="flex justify-between md:flex font-jakarta md:justify-center px-4 space-x-3 mx-auto w-full" >
 {/* Nav-bar setion */}
-<div className="md:flex justify-between items-center text px-20  ">
+
 
   
- <div className='md:flex gap-14 items-center '>
-  <div>
+ 
+  <div className='pr-7'>
   <img src={Bank} alt="Bank" />
   </div>
+
+   <div className='hidden md:flex justify-between items-center gap-52  '>
+ <div className="flex gap-16">
 <div>
 <a href="/" className='text-gray-400 text-sm'>Personal</a>
 </div>
@@ -26,41 +36,92 @@ const Navbar = () => {
 <div>
 <a href="/"  className='text-gray-400 text-sm'>About</a>
 </div>
-
 <div>
-
-<select name="" id="" className='text-gray-400 text-sm'>
-<option value="">Features</option>
-</select>
+  <a href="/" className='text-gray-400 text-sm'>Features</a>
 </div>
-
-<select name="" id="" className='text-gray-400 text-sm'>
-<option value=""  >ALAT life</option>
-</select>
-
 <div>
-<select name="" id="" className='text-gray-400 text-sm'>
-<option value=""  >Help</option>
-</select>
+  <a href="/" className='text-gray-400 text-sm'>ALAT life</a>
 </div>
-
 <div>
-<select name="" id="" className='text-gray-400 text-sm'>
-<option value=""  className='text-gray-400 text-sm border-0 outline-0'>Developer</option>
-</select>
+  <a href="/" className='text-gray-400 text-sm'>Help</a>
+</div>
+<div>
+  <a href="/" className='text-gray-400 text-sm'>Developer</a>
+</div>
 </div>
 
-</div>
-
-<div className="flex justify-left items-center gap-4">
+<div className="flex justify-self items-center gap-4">
 <button className='shadow-2xl text-sm  text-pink-700 px-5 py-2 rounded font-semi-bold'>Log in</button>
 <button className='bg-pink-700 text-sm font-semi-bold text-white px-3 py-2 rounded'>SignUp</button>
-</div>
 
 </div>
 
 
+
 </div>
+  
+  <div className='flex flex-col p-4 items-center shadow-inner  md:hidden '>
+      <div className=" " onClick={toggleMenu}>
+        {isMenuOpen ? (
+          // Display the exit icon when the menu is open
+          <img src={exit} alt="Exit" className='p-4' />
+        ) : (
+          // Display the menu icon when the menu is closed
+          <img src={menu} alt="Menu" />
+        )}
+      </div>
+
+      {isMenuOpen  && (
+        
+  <div className='block  py-5 px-5  md:hidden  '>
+  
+<div>
+<a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Personal</a>
+</div>
+<div>
+<a href="/"  className='hover:underline hover:font-semibold text-gray-400 text-sm'>Business</a>
+</div>
+<div>
+<a href="/"  className='hover:underline hover:font-semibold text-gray-400 text-sm'>About</a>
+</div>
+<div>
+  <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Features</a>
+</div>
+<div>
+  <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>ALAT life</a>
+</div>
+<div>
+  <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Help</a>
+</div>
+<div>
+  <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Developer</a>
+</div>
+
+
+<div className="flex justify-self items-center gap-4">
+<button className='shadow-2xl text-sm  text-pink-700 px-5 py-2 rounded font-semi-bold hover:bg-pink-800 hover:text-white hover:font-semibold'>Log in</button>
+<button className='bg-pink-700 text-sm font-semi-bold text-white px-3 py-2 rounded hover:bg-pink-300 hover:semibold'>SignUp</button>
+
+</div>
+
+
+
+</div>
+
+      )}
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</>
     )
 }
 
