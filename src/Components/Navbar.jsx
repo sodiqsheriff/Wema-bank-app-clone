@@ -20,13 +20,18 @@ const Navbar = () => {
 
 
   
+ <div className='md:hidden lg:hidden'>
+  <img src={Bank} alt="Bank" />
+  </div>
  
-  <div className='pr-7'>
+  
+   <div className='hidden md:flex justify-between items-center gap-28 lg:justify-between lg:gap-60 '>
+ <div className="container md:flex items-center justify-between space-x-10  ">
+
+ <div className='w-100'>
   <img src={Bank} alt="Bank" />
   </div>
 
-   <div className='hidden md:flex justify-between items-center gap-52  '>
- <div className="flex gap-16">
 <div>
 <a href="/" className='text-gray-400 text-sm'>Personal</a>
 </div>
@@ -40,7 +45,7 @@ const Navbar = () => {
   <a href="/" className='text-gray-400 text-sm'>Features</a>
 </div>
 <div>
-  <a href="/" className='text-gray-400 text-sm'>ALAT life</a>
+  <a href="/" className='text-gray-400 text-sm'>ALATlife</a>
 </div>
 <div>
   <a href="/" className='text-gray-400 text-sm'>Help</a>
@@ -50,8 +55,8 @@ const Navbar = () => {
 </div>
 </div>
 
-<div className="flex justify-self items-center gap-4">
-<button className='shadow-2xl text-sm  text-pink-700 px-5 py-2 rounded font-semi-bold'>Log in</button>
+<div className="gap-2 md:flex justify-self items-center md:gap-4">
+<button className='shadow-2xl text-sm  text-pink-700 px-5 py-2 rounded font-semi-bold'>Login</button>
 <button className='bg-pink-700 text-sm font-semi-bold text-white px-3 py-2 rounded'>SignUp</button>
 
 </div>
@@ -60,7 +65,7 @@ const Navbar = () => {
 
 </div>
   
-  <div className='flex flex-col p-4 items-center shadow-inner  md:hidden '>
+  <div className=' p-4  items-center  md:hidden '>
       <div className=" " onClick={toggleMenu}>
         {isMenuOpen ? (
           // Display the exit icon when the menu is open
@@ -73,7 +78,8 @@ const Navbar = () => {
 
       {isMenuOpen  && (
         
-  <div className='block  py-5 px-5  md:hidden  '>
+  
+  <div className='grid  p-6 bg-opacity-10 mx-auto  shadow-2xl  py-5   md:hidden  '>
   
 <div>
 <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Personal</a>

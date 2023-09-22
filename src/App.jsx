@@ -1,16 +1,9 @@
-    
-    import google from './assets/google-play.png'
-    import apple from './assets/apple-play.png'
-    import Simple from './assets/Simple.png'
-    import Reliable from './assets/Reliable.png'
-    import Covenient from './assets/Convenient.png'
-    import call from './assets/chat.png'
-    {/*hero-section-images */}
-    import transact from './assets/pay.png'
-    import quick from './assets/24-support.png'
-    import secure from './assets/vector2.png'
-    import digital from './assets/Icon.png'
-    {/*sub-hero-section */}
+import google from './assets/google-play.png'
+import apple from './assets/apple-play.png'
+
+{/*hero-section-images */}
+   
+   
     import Iphone from './assets/Iphone.png'
     {/*seamless-section */}
     import chart from './assets/Goal.png'
@@ -35,113 +28,28 @@
 
 
     import Navbar from './Components/Navbar'
+    import Herosection from './Components/Herosection'
+    import Sub from './Components/Subsection.jsx'
     import './App.css'
 
     function App() {
 
     return (
+
     <>
 
     {/* hero section */}
 
    
      <Navbar />
+     <Herosection />
+     <Sub />
 
-    <div>
-
-      <div className="block mt-5 p-10 md:flex  justify-center gap-52 md:mt-10 w-full ">
-        <div className='md:pt-10'>
-          <span className="text-4xl font-semibold leading-tight md:text-7xl md:font-semibold md:leading-tight tracking widest w-1/2 font-jarkata ">
-          <h1>
-            Nigeria's first fully 
-          </h1>
-          <h1>digital <i className='text-pink-900'>banking.</i> </h1>
-          </span>
-
-          <section className='text-sm md:tracking-widest '>
-            <h3 className='text-sm pt-4'>
-              Choose how and where you spend your money, save alone or with 
-            </h3>
-            <h3>friends, take a loan to buy new devices and so much more.</h3>
-          </section>
-
-          <h1 className="text-sm pt-5 md: tracking-widest md:pt-10">
-          Ready to do more? Download the app.
-          </h1>
-
-          <div className="flex items-center gap-4 pt-5">
-            <a href="/" className='px-4 py-2 rounded bg-black'> <img src={google} alt="google" className='w-24 md:w-28' /> </a>
-            <a href="/" className='px-4 py-2 rounded bg-black'> <img src={apple} alt="apple" className='w-24 md:w-28' /> </a>
-          </div>
-        </div>
-
-        <div className='max-w-sm pt-5 md:w-4/5 '>
-          
-              
-            <div className="pb-5 md:pb-7">
-              <img src={Simple} alt="Simple" />
-            </div>
-            <div className='pb-5 md:pb-7'>
-              <img src={Reliable} alt="Reliable" />
-            </div>
-            <div>
-              <img src={Covenient} alt="Covenient" />
-            </div>
-         
-            <div className="flex justify-end w-sm">
-        <img src={call} alt="call" className='' />
-      </div>
-      
-
-        
-      </div>
-     
-      </div>
-
-      
-    </div>
+  
     {/* end of hero-section */}
 
     {/* sub-hero-section */}
 
-    <div className='mt-1 pb-2 px-10 md:mt-2 md:px-24 md:pb-5'>
-    <div ><h1 className="text-3xl font-bold md:text-4xl md:font-semibold">Join over 700k ALAT users 
-    <br />to enjoy Nigeria's best digital bank. </h1></div>
-
-    <div className="md:flex flex-row justify-between pt-12 max-w-full">
-
-    <div className='w-full pb-6 md:pb-0'>
-    <img src={transact} alt="transact" className='pb-3' />
-    <h2 className="pb-2 text-lg font-bold md:font-bold md:pb-5"> Quick Payment</h2>
-    <h3 className="text-sm tracking-widest md:text-xs md:tracking-wider">pay your bills online securely 
-    <br />and instantly without glitch.</h3>
-    </div>
-
-    <div className='w-full pb-6 md:pb-0'>
-    <img src={secure} alt="secure" className='pb-3' />
-    <h2 className="pb-2 text-lg font-bold md:font-bold md:pb-5"> Secure Payment</h2>
-    <h3 className="text-sm tracking-widest md:text-xs md:tracking-wider">Bank online with an assured 
-    <br />mind towards security</h3>
-    </div>
-
-    <div className='w-full pb-6 md:pb-0'>
-    <img src={digital} alt="digital" className='pb-3' />
-    <h2 className="pb-2 text-lg font-bold md:font-bold md:pb-5"> 100% Digital</h2>
-    <h3 className="text-sm tracking-widest md:text-xs md:tracking-wider">Get your account up and  
-    <br />ready in minutes.</h3>
-    </div>
-
-    <div className='w-full pb-6 md:pb-0'>
-    <img src={quick} alt="quick" className='pb-3' />
-    <h2 className="pb-2 text-lg font-bold md:font-bold md:pb-5"> Customer Support</h2>
-    <h3 className="text-sm tracking-widest md:text-xs md:tracking-wider">Chat with us anytime and  
-    <br />get reply instantly</h3>
-    </div>
-
-    </div>
-
-
-    </div>
 
     {/*phone-section*/}
 
@@ -320,7 +228,7 @@
 
     {/* footer-section */}
 
-    <div className="px-10 md:flex justify-between md:px-24 mb-10  gap-40 items-center">
+    <div className="px-16 space-y-0 md:flex justify-between md:px-24 mb-10  gap-40 items-center">
 
     <div>
     <h1 className="md:flex items-center text-xs font-semi-bold">
@@ -339,9 +247,9 @@
     </div>
     </div>
 
-    <div className="px-10 md:flex justify-center  text-xs gap-60 md:px-24 mb-16">
+    <div className="  px-20 mb-0 md:flex justify-center  text-xs gap-48 md:px-24 md:mb-16">
 
-    <div className='pb-4'>
+    <div className='pb-4 md:pb-4'>
     <h1 className="text-pink-800 font-bold pb-2">Company</h1>
     <div className='leading-7'>
     <h6><a href="/" className='text-gray-700  capitalize'>about alat</a></h6>
@@ -354,7 +262,7 @@
 
     </div>
 
-    <div className='pb-4'>
+    <div className='pb-4 md:pb-4'>
     <h1 className="text-pink-800 font-bold pb-2">Customer Support</h1>
     <div className="leading-7">
     <h6><a href="/">070022552528</a></h6>
@@ -362,7 +270,7 @@
     </div>
     </div>
 
-    <div className='pb-4'>
+    <div className='pb-4 md:pb-4'>
     <h1 className="text-pink-800 font-bold pb-2">Quick Links</h1>
     <div className='leading-7'>
     <h6><a href="/" className='text-gray-700  capitalize'>Join Us</a></h6>
@@ -374,17 +282,17 @@
     </div>
 
     <div>
-    <h1 className="text-pink-800 font-bold pb-3 capitalize">supported by</h1>
+    <h1 className="pb-2 text-pink-800 font-bold md:pb-3 capitalize">supported by</h1>
     <div className='pb-4'>
     <img src={wema} alt="wema" />
     </div>
     <h1 className='text-pink-800 pb-5'>Connect with us:</h1>
 
-    <div className="md:flex justify-center gap-3">
-    <img src={facebook} alt="facebook" />
-    <img src={twitter} alt="twitter" />
-    <img src={linkedln} alt="linkedln" />
-    <img src={instagram} alt="instagram" />
+    <div className="flex w-sm mb-16  md:flex md:justify-center gap-3">
+    <img src={facebook} alt="facebook" className='pb-2' />
+    <img src={twitter} alt="twitter" className='pb-2' />
+    <img src={linkedln} alt="linkedln" className='pb-2' />
+    <img src={instagram} alt="instagram" className='pb-2' />
     </div>
 
 
