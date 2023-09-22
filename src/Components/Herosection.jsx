@@ -14,7 +14,7 @@ return(
 <div>
 
       <div className=" block p-12  md:flex flex-row  justify-between w-full md:mt-10  md:px-36 ">
-        <div className='pt-10 pb-7 md:pt-10 w-1/2 '>
+        <div className='pt-10 pb-7 w-md md:pt-10 w-full '>
           <span className="text-4xl font-semibold leading-tight md:text-6xl md:font-semibold md:leading-tight tracking widest w-1/2 font-jarkata ">
           <h1>
             Nigeria's first fully 

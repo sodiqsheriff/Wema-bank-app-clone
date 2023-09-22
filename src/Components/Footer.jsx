@@ -31,7 +31,7 @@ const Footer =()=>{
     </div>
     </div>
 
-<div className="  px-20 mb-0 md:flex justify-between w-full text-xs gap-48 md:px-36 md:mb-16">
+<div className="px-20 mb-0 md:flex justify-evenly w-full text-xs gap-10 md:mb-16">
 
 <div className='pb-4 md:pb-4'>
 <h1 className="text-pink-800 font-bold pb-2">Company</h1>

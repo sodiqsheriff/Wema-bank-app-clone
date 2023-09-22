@@ -79,7 +79,7 @@ const Navbar = () => {
       {isMenuOpen  && (
         
   
-  <div className='grid  p-6 bg-opacity-10 mx-auto  shadow-2xl  py-5   md:hidden  '>
+  <div className='block p-6 bg-opacity-10 m-auto   shadow-2xl  py-5   md:hidden  '>
   
 <div>
 <a href="/" className='hover:underline hover:font-semibold text-gray-400 text-sm'>Personal</a>
