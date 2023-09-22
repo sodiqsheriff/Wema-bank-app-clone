@@ -13,8 +13,8 @@ return(
   <>
 <div>
 
-      <div className=" block p-12  md:flex md:flex-row  justify-center gap-52 md:mt-10 w-full md:px-0 ">
-        <div className='pt-10 pb-7 md:pt-10 '>
+      <div className=" block p-12  md:flex flex-row  justify-between w-full md:mt-10  md:px-36 ">
+        <div className='pt-10 pb-7 md:pt-10 w-1/2 '>
           <span className="text-4xl font-semibold leading-tight md:text-6xl md:font-semibold md:leading-tight tracking widest w-1/2 font-jarkata ">
           <h1>
             Nigeria's first fully 
@@ -39,7 +39,7 @@ return(
           </div>
         </div>
 
-        <div className='max-w-sm  md:w-4/5 '>
+        <div className='max-w-sm  md:w-1/2 '>
           
               
             <div className="pb-5 md:pb-7">

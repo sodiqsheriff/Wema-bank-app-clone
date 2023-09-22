@@ -10,7 +10,7 @@ const Sub =()=> {
     return(
 
         
-    <div className='mt-1 pb-2 px-12 md:mt-2 md:px-32 md:pb-5'>
+    <div className='mt-1 pb-2 px-12 md:mt-2 md:pl-32 md:pb-5'>
     <div ><h1 className="text-3xl font-bold md:text-4xl md:font-semibold">Join over 700k ALAT users 
     <br />to enjoy Nigeria's best digital bank. </h1></div>
 
