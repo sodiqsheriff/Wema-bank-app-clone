@@ -26,7 +26,7 @@ const Navbar = () => {
  
   
    <div className='hidden md:flex justify-between items-center pb-16 lg:justify-between lg:gap-60 '>
- <div className="container md:flex items-center md:justify-between space-x-0 md:gap-8 lg:space-x-10  ">
+ <div className="container md:flex items-center md:justify-between space-x-0 md:gap-16 lg:space-x-10  ">
 
  <div className='w-100'>
   <img src={Bank} alt="Bank" />
