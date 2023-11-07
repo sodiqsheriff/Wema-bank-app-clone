@@ -12,7 +12,7 @@ const Footer =()=>{
     return(
      
         <>
-    <div className="px-16 space-y-0 md:flex justify-between md:px-24 w-full mb-10  gap-40 items-center">
+    <div className="px-5 space-y-0 md:flex justify-between  md:px-8 w-full mb-10  gap-40 items-center lg:px-20">
 
     <div>
     <h1 className="md:flex items-center text-xs font-semi-bold">
@@ -31,9 +31,9 @@ const Footer =()=>{
     </div>
     </div>
 
-<div className="px-20 mb-0 md:flex justify-evenly w-full text-xs gap-10 md:mb-16">
+<div className="grid grid-cols-2 px-5 mb-0 md:flex justify-evenly w-full md:px-8 text-xs gap-10 md:mb-16 lg:flex lg:px-0">
 
-<div className='pb-4 md:pb-4'>
+<div className='pb-0 md:pb-4'>
 <h1 className="text-pink-800 font-bold pb-2">Company</h1>
 <div className='leading-7'>
 <h6><a href="/" className='text-gray-700  capitalize'>about alat</a></h6>

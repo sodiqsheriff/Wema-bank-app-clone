@@ -4,8 +4,8 @@ const Account =()=>{
 
     return(
         
-    <div className='mb-10'>
-    <h1 className="text-3xl font-bold md:text-5xl font-semi-bold text-center stretch pb-4">Create an account in 4 easy steps</h1> 
+    <div className='px-5 md:px-8 mb-10'>
+    <h1 className="text-3xl font-bold md:text-4xl font-semi-bold text-center stretch pb-4 lg:text-5xl">Create an account in 4 easy steps</h1> 
 
     <div className="font-normal md:flex justify-center items-center md:font-semibold text-center gap-20 pb-10">
     <div className='pb-5 md:pb-0'>

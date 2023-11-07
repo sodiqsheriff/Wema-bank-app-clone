@@ -13,17 +13,17 @@ return(
   <>
 <div>
 
-      <div className=" block p-12  md:flex flex-row  justify-between w-full md:mt-10  md:px-36 ">
-        <div className='pt-10 pb-7 w-md md:pt-10 w-full '>
-          <span className="text-4xl font-semibold leading-tight md:text-6xl md:font-semibold md:leading-tight tracking widest w-1/2 font-jarkata ">
+      <div className=" block px-5  md:flex flex-row  justify-between w-full md:mt-0  md:px-10  lg:px-20 ">
+        <div className='py-7 w-md md:pt-10 w-full '>
+          <span className="text-4xl font-semibold leading-tight md:text-5xl md:font-semibold md:leading-tight tracking widest w-1/2 font-jarkata lg:text-7xl ">
           <h1>
             Nigeria's first fully 
           </h1>
           <h1>digital <i className='text-pink-900'>banking.</i> </h1>
           </span>
 
-          <section className='text-sm md:tracking-widest '>
-            <h3 className='text-sm pt-1'>
+          <section className='text-sm  lg:tracking-widest '>
+            <h3 className='text-sm pt-1 '>
               Choose how and where you spend your money, save alone or with 
             </h3>
             <h3>friends, take a loan to buy new devices and so much more.</h3>
@@ -39,7 +39,7 @@ return(
           </div>
         </div>
 
-        <div className='max-w-sm  md:w-1/2 '>
+        <div className='w-full max-w-sm  md:w-1/2 '>
           
               
             <div className="pb-5 md:pb-7">
