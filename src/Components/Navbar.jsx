@@ -25,13 +25,13 @@ const Navbar = () => {
   </div>
  
   
-   <div className='hidden md:flex justify-between items-center pb-10 lg:justify-between lg:gap-60 '>
+   <div className='hidden md:flex justify-between items-center pb-16 lg:justify-between lg:gap-60 '>
  <div className="container md:flex items-center md:justify-between space-x-0 md:gap-8 lg:space-x-10  ">
 
  <div className='w-100'>
   <img src={Bank} alt="Bank" />
   </div>
-<div className='flex space-x-6 lg:space-x-8'>
+<div className='flex space-x-12 lg:space-x-8'>
 <div>
 <a href="/" className='text-gray-400 text-sm'>Personal</a>
 </div>
